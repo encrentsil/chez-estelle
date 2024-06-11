@@ -106,8 +106,9 @@ body {
     justify-content: center;
     padding: 100px;
     background-color: rgba(230,235,225,1);
-    margin: 0;
     align-items: center;
+    overflow: hidden;
+    margin: 0;
   }
 
   .sub-header {
@@ -126,11 +127,16 @@ body {
     transition-timing-function: ease;
     transition-duration: 0.6;
     transition-delay: 0s;
-    transition-behavior: normal;
     transition-property: all;
     overflow: hidden; /* Ensure the image does not overflow the container */
 
   }
+ #about-img {
+  overflow: hidden;
+   max-width: max-content;
+  max-height: 65vh;
+    border-radius: 40px;
+ }
 
   .about-image:hover {
     transform: scale(1.5); 
@@ -294,7 +300,39 @@ grid-row-start: 1;
   
  }
 
+ .group1-button {
+  display: flex;
+  font-size: 30px;
+  border: none;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  left: 80px;
+  bottom: 200px;
+ }
 
+ .group3-buttons{
+  display: flex;
+  font-size: 30px;
+  border: none;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  left: 80px;
+  bottom: 120px;
+ }
+  .group2-button {
+    display: flex;
+  font-size: 30px;
+  border: none;
+  position:  relative;
+  text-align: center;
+  text-transform: uppercase;
+  left: 80px;
+  bottom: 120px;
+  }
+
+ 
 
 .flex-text {
   font-family: Poppins;
@@ -342,39 +380,51 @@ grid-row-start: 1;
 
 #our-menu {
   background-color: #F5F2EC;
-  width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 40px;
   align-items: center;
   padding: 100px 0px;
-  padding-left: 100px;
+  
+  
   
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 80vw;
+}
+
 .grid-container img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 20px;
-gap: 20px;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: 10px;
+
 }
 
 .group1 {
   grid-row-start: 1;
   grid-row-end: 3;
   height: 520px;
+ 
 }
 
- .group2 {
+ .group2{
   grid-column-start: 1;
   grid-column-end: 3;
-  height: 520px;
-
+  height: 250px;
  }
+ 
+
+ 
 
  .group3{
   height: 250px;
+  
  }
 
  footer {
